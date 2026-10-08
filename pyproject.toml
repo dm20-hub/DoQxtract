@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "doqxtract"
+version = "1.0.0"
+description = "Flow feature extractor for DNS over QUIC (DoQ) traffic"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = ["numpy", "pandas", "dpkt"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+doqxtract = "doqxtract.cli:main"
+
+[tool.setuptools]
+packages = ["doqxtract"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

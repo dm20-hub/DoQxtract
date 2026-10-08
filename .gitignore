@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+build/
+dist/
+*.egg-info/
+
+# captures and generated datasets stay out of the repository
+*.pcap
+*.pcapng
+datasets/
