@@ -1,10 +1,8 @@
 # DoQxtract
 
-![License](https://img.shields.io/badge/license-MIT-blue) ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
 
 DoQxtract extracts flow level features from DNS over QUIC (DoQ) traffic. It reads a packet capture, cuts the UDP port 853 packets of every flow into records of a fixed number of packets, and writes 29 statistical features for every record. The features use only packet lengths, directions and arrival times, so no payload is needed and the encryption of DoQ does not matter.
 
-The code accompanies the paper "Detection and Attribution of Malicious DNS over QUIC Tunnels using Machine Learning" by Moulya D M, Saurashtra Matawale and Saumya Hegde (Department of Computer Science and Engineering, NITK Surathkal).
 
 ## Contents
 
@@ -230,25 +228,6 @@ DoQxtract/
 
 [5] C. Huitema, S. Dickinson and A. Mankin. DNS over Dedicated QUIC Connections. RFC 9250, May 2022, Section 5.5.2. https://www.rfc-editor.org/rfc/rfc9250
 
-## Citation
 
-If you use this code, please cite the paper above.
 
-A BibTeX entry follows.
 
-```bibtex
-@unpublished{moulya2026doqxtract,
-  author = {{Moulya D M} and Matawale, Saurashtra and Hegde, Saumya},
-  title  = {Detection and Attribution of Malicious {DNS} over {QUIC} Tunnels using Machine Learning},
-  note   = {Manuscript in preparation},
-  year   = {2026}
-}
-```
-
-## License
-
-MIT, see `LICENSE`.
-
-## Contact
-
-Questions and bug reports are welcome in the [issue tracker](https://github.com/dm20-hub/DoQxtract/issues) of this repository.
