@@ -19,9 +19,7 @@ DoQxtract extracts flow level features from DNS over QUIC (DoQ) traffic. It read
 * [Reproducing the datasets of the paper](#reproducing-the-datasets-of-the-paper)
 * [Project structure](#project-structure)
 * [References](#references)
-* [Citation](#citation)
-* [License](#license)
-* [Contact](#contact)
+
 
 ## Overview
 
